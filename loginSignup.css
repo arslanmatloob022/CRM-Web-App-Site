@@ -6,13 +6,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-image: url("images/crm1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
 /* Home */
 .home {
@@ -21,10 +14,7 @@ body {
   width: 100%;
 }
 /* Wellcome Scene */
-.space {
-  width: 100%;
-  height: 120px;
-}
+
 .mainDiv {
   display: flex;
   justify-content: space-around;
@@ -34,7 +24,7 @@ body {
 .wellcomeTile {
   display: flex;
   align-items: center;
-  border: 3px solid red;
+  border: 3px solid orangered;
   border-radius: 15px;
   backdrop-filter: blur(8px);
   width: 80%;
@@ -54,24 +44,24 @@ body {
 }
 .welcomeText {
   font-weight: 700;
-  transition: color 0.6s ease-out;
+  transition: color 0.4s ease-out;
   color: orangered;
   display: inline-block;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 .welcomeText:hover {
-  color: #ff0000;
+  color: whitesmoke;
   cursor: default;
 }
 .welcomeTextp {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  transition: color 0.6s ease-out;
+  transition: color 0.4s ease-out;
   color: orangered;
 }
 .welcomeTextp:hover {
   cursor: default;
-  color: #ff0000;
+  color: whitesmoke;
 }
 .images img {
   border: 1px solid orangered;
@@ -97,7 +87,22 @@ body {
   pointer-events: none;
   transition: all 0.5s ease-out;
 }
+body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-out;
+}
 .home.show::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+body.show::before {
   opacity: 1;
   pointer-events: auto;
 }
@@ -121,6 +126,11 @@ body {
   /* transition: all 0.4s ease-out; */
 }
 .home.show .form_container {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+body.show .form_container {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
@@ -150,21 +160,21 @@ body {
   position: absolute;
   top: 10px;
   right: 20px;
-  color: rgba(36, 65, 185, 1);
+  color: orangered;
   font-size: 22px;
   opacity: 0.8;
   cursor: pointer;
 }
 .form_close:hover {
   border-radius: 0px 5px 0px 5px;
-  background-color: rgba(36, 65, 185, 1);
+  background-color: orangered;
   color: white;
   opacity: 1;
   cursor: pointer;
 }
 .form_container h2 {
   font-size: 22px;
-  color: rgba(36, 65, 185, 1);
+  color: orangered;
   text-align: center;
 }
 .input_box {
@@ -179,7 +189,7 @@ body {
   border: none;
   outline: none;
   padding: 0 30px;
-  color: rgb(22, 22, 22);
+  color: rgb(2, 6, 10);
   transition: all 0.2s ease;
   border-bottom: 1.5px solid #aaaaaa;
 }
@@ -217,7 +227,7 @@ body {
 }
 .form_container a {
   text-decoration: none;
-  color: rgba(36, 65, 185, 1);
+  color: orangered;
   font-size: 12px;
 }
 .form_container a:hover {
@@ -229,16 +239,16 @@ body {
   white-space: nowrap;
 }
 .checkbox input {
-  accent-color: rgba(36, 65, 185, 1);
+  accent-color: orangered;
 }
 .checkbox label {
   font-size: 12px;
   cursor: pointer;
   user-select: none;
-  color: rgb(58, 74, 219);
+  color: orangered;
 }
 .form_container .button {
-  background: rgba(36, 65, 185, 1);
+  background: orangered;
   margin-top: 30px;
   width: 100%;
   padding: 10px 0;
