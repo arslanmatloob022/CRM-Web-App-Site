@@ -148,10 +148,10 @@ a {
 }
 .checkbox {
   float: left;
-  background-color: red;
+  background-color: orangered;
 }
 .checks input[type="checkbox"] {
-  background-color: red;
+  background-color: orangered;
 }
 .check-box input {
   width: 20px;
