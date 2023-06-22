@@ -82,14 +82,14 @@ a {
   margin-left: 5%;
   margin-top: 1%;
   font-weight: 800;
-  color: rgba(18, 216, 121, 1);
+  color: orangered;
 }
 
 .input_box {
   margin-left: 10%;
   width: 80%;
   align-items: center;
-  background-color: rgba(224, 224, 224, 0.904);
+  /* background-color: rgba(224, 224, 224, 0.904); */
   display: flex;
   margin-top: 1%;
 }
@@ -152,8 +152,11 @@ a {
 }
 .checks input[type="checkbox"] {
   background-color: orangered;
+  color: orangered;
 }
 .check-box input {
+  background-color: orangered;
+  color: orangered;
   width: 20px;
   height: 20px;
 }
@@ -163,7 +166,7 @@ a {
 }
 
 .input_box input[type="radio"]:checked + label {
-  background-color: rgb(33, 33, 151);
+  background-color: rgba(18, 216, 121, 1);
   cursor: pointer;
   color: #e6e6e6;
 }
@@ -196,7 +199,7 @@ a {
   margin-right: 9%;
   padding: 10px 20px;
   color: white;
-  background-color: rgb(20, 21, 107);
+  background-color: orangered;
   cursor: pointer;
   border-radius: 5px;
   border: 1px solid whitesmoke;
