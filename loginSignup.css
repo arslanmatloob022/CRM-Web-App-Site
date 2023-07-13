@@ -138,10 +138,6 @@ body.show .form_container {
 .signup_form {
   display: none;
 }
-.password_form {
-  display: none;
-}
-
 .form_container.active .signup_form {
   display: block;
 }
